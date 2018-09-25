@@ -51,10 +51,11 @@
 #抽奖  
 #https://colahedy.github.io/lottery/lottery.html
 
-#JQueny选项卡 https://colahedy.github.io/jqTabcontrol.html
-#放大镜 https://colahedy.github.io/jqMagnify.html
-#轮播图 https://colahedy.github.io/jqCarousel.html
-#背景跟随 https://colahedy.github.io/JqBtn.html
+# JQueny
+# 选项卡 https://colahedy.github.io/jqTabcontrol.html
+# 放大镜 https://colahedy.github.io/jqMagnify.html
+# 轮播图 https://colahedy.github.io/jqCarousel.html
+# 背景跟随 https://colahedy.github.io/JqBtn.html
 
-Ajax
-#瀑布流 https://colahedy.github.io/jqAjaxPubu.html
+# Ajax
+# 瀑布流 https://colahedy.github.io/jqAjaxPubu.html
