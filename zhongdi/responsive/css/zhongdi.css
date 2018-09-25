@@ -1,0 +1,206 @@
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: url(../image/banner.jpg) no-repeat 0px 0px;
+  padding: 20px;
+}
+header .nav {
+  background: rgba(0, 0, 0, 0.41);
+  padding: 15px 0;
+}
+header .nav .glyphicon-align-justify {
+  display: none;
+}
+header .nav ul {
+  list-style: none;
+}
+header .nav ul li {
+  float: left;
+  line-height: 30px;
+}
+header .nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+header .nav .right {
+  margin: 0;
+}
+header .nav .right input {
+  background: transparent;
+}
+header .nav .right span {
+  color: white;
+}
+header .font {
+  text-align: center;
+  margin: 100px;
+}
+header .font h1 {
+  font-family: "微软雅黑";
+  font-size: 72px;
+  color: white;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  display: inline;
+}
+header .tag {
+  position: relative;
+  top: 100px;
+}
+header .tag .col-xs-3 {
+  text-align: center;
+  color: white;
+}
+header .tag .col-xs-3 .dolor {
+  background: #16a667;
+}
+header .tag .col-xs-3 .dolor img {
+  background: none;
+  padding: 10px;
+  border-width: 5px;
+}
+header .nav ul li:after {
+  content: '/';
+  color: white;
+}
+.about {
+  padding: 80px;
+  background: gainsboro;
+  overflow: hidden;
+}
+.about .content {
+  margin-top: 40px;
+}
+.about .content h3 {
+  color: black;
+  font-size: 32px;
+  font-family: "微软雅黑";
+  margin-bottom: 30px;
+}
+.about .content .left {
+  float: left;
+  margin-right: 30px;
+}
+.about .content .right {
+  font-size: 18px;
+  color: #666666;
+  line-height: 24px;
+  padding-top: 10px;
+}
+.services {
+  background: #37353b;
+  overflow: hidden;
+  padding: 80px;
+}
+.services .ico h1 {
+  color: white;
+  font-family: "微软雅黑";
+  padding: 0 0 70px;
+  font-size: 32px;
+}
+.services .ico .r {
+  width: 30%;
+  text-align: center;
+  color: white;
+  float: left;
+  margin: 0 15px;
+}
+.services .ico .r img {
+  background-color: #16A667;
+  border-radius: 10px;
+  padding: 4px 5px;
+}
+.services .ico .r p {
+  color: gray;
+}
+.services .r img:hover {
+  background-color: orange;
+}
+@media screen and (max-width: 767px) {
+  header .nav {
+    position: relative;
+  }
+  header .nav .glyphicon {
+    display: block;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  header .nav ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    display: none;
+    z-index: 1;
+  }
+  header .nav ul li {
+    display: block;
+    background: orange;
+    opacity: .8;
+    width: 100%;
+  }
+  header .font h1 {
+    font-size: 30px;
+  }
+  header .nav ul li:after {
+    content: '';
+  }
+  .col-xs-3 h3 {
+    font-size: 12px;
+  }
+  .about {
+    padding: 15px;
+  }
+  .about .content {
+    margin-top: 100px;
+  }
+  .about .content h3 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .about .content .left {
+    margin-right: 0;
+  }
+  .about .content .left img {
+    width: 100%;
+  }
+  .about .content .right {
+    font-size: 12px;
+  }
+  .services .ico h1 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  .services .ico .r {
+    width: 100%;
+  }
+  .services .ico .r h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header .col-xs-3 h3 {
+    font-size: 14px;
+  }
+  header .font h1 {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header .col-xs-3 {
+    font-size: 16px;
+  }
+  header .col-xs-3 .dolor {
+    width: 205px;
+    margin: 0 auto;
+  }
+}

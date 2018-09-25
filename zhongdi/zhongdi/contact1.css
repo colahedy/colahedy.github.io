@@ -1,0 +1,377 @@
+body {
+	margin: 0;
+}
+
+header {
+	background: url(img/img/banner.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	padding-top: 25px;
+	height: 480px;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.top ul {
+	float: left;
+}
+
+nav.top {
+	/*padding-top: 15px;*/
+	background: rgba(0, 0, 0, 0.41);
+	width: 1140px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+nav.top a {
+	text-decoration: none;
+	margin: 0 25px;
+	color: white;
+	transition: all .3s;
+}
+
+.ui li {
+	float: left;
+	line-height: 54px;
+	padding-top: 4px;
+}
+
+nav.top ul li:last-of-type a {
+	color: yellow;
+	border-top: 4px solid yellow;
+}
+
+nav.top ul li a:hover {
+	color: yellow;
+	border-top: 4px solid yellow;
+}
+
+nav.top ul li:after {
+	content: '/';
+	color: white;
+}
+
+nav.top ul li:last-of-type:after {
+	content: '';
+}
+
+nav.top form {
+	float: right;
+	line-height: 54px;
+}
+
+nav.top input {
+	padding: 6px 6px;
+	background: rgba(0, 0, 0, 0.41);
+	border: 1px solid white;
+	outline: none;
+	color: white;
+}
+
+nav.top input[type=submit] {
+	background: url(img/img/search.png);
+	background-position: center;
+	width: 22px;
+	height: 22px;
+	position: relative;
+	right: 32px;
+	border: none;
+	cursor: pointer;
+}
+
+.font {
+	text-align: center;
+	margin-top: 200px;
+}
+
+.font h1 {
+	color: white;
+	font-size: 72px;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	display: inline;
+}
+.relation{
+	overflow: hidden;
+}
+.content{
+	width: 1140px;
+	margin: 0 auto;
+}
+.content h2{
+	color: #394c53;
+	font-size: 50px;
+	text-align: center;
+}
+.textbox{
+	/*background: lightgray;*/
+}
+.textbox span{
+	font-family: "微软雅黑";
+	display: block;
+	padding-bottom: 10px;
+}
+.textbox1{
+	width: 33.33%;
+	float: left;
+}
+.textbox input{
+	padding: 10px 12px;
+	border: 1px solid   #DCDCDC;
+	width: 325px;
+	outline: none;
+	margin-top: 2px;
+}
+.textbox2 input{
+	width: 95%;
+	height: 300px;
+}
+.textbox input:hover{
+	color: orange;
+	border-color: orange;
+}
+.send{
+	background: green;
+	color: white;
+	border: none;
+	padding: 10px 40px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.send:hover{
+	background-color: orange;
+	transition-duration: 0.5s;
+}
+.message {
+	background: #37353b;
+	height: 450px;
+	overflow: hidden;
+}
+
+.mess {
+	margin: 0px auto;
+	width: 1140px;
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.mess1 {
+	width: 33.33%;
+}
+
+.message h2 {
+	color: white;
+	font-family: "微软雅黑";
+	font-size: 32px;
+	width: 100%;
+}
+
+.person {
+	float: left;
+	margin-top: 10px;
+}
+
+.per1 img {
+	float: left;
+	width: 30%;
+	margin-right: 8px;
+}
+
+.per2 a {
+	text-decoration: none;
+	color: white;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	text-align: left;
+}
+
+.per2 a:hover {
+	color: orange;
+}
+
+.person h3 {
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+
+.person p {
+	width: 260px;
+	color: #999;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	text-align: left;
+	margin-top: 0;
+	line-height: 25px;
+}
+
+.mess2 {
+	width: 33.33%;
+}
+
+
+/*.mess2 a{
+	text-decoration: none;
+	color: #999;
+	line-height: 36px;
+	cursor: pointer;
+}*/
+
+
+/*.mess2 a:hover{
+	color: orange;
+}*/
+
+.mess2 ul li {
+	text-decoration: none;
+	color: #999;
+	line-height: 30px;
+	cursor: pointer;
+	background: url(img/img/list-arrow.png) no-repeat 0px 18px;
+	padding: 6px 20px;
+}
+
+.mess2 ul li:hover {
+	color: orange;
+}
+
+.mess3 {
+	width: 33.33%;
+}
+
+.c p {
+	color: #999999;
+	margin: 0;
+}
+
+.iphone {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: url(img/img/img-sprite1.png) -220px 0px;
+	display: inline-block; 
+}
+
+.map {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: url(img/img/img-sprite1.png) -260px 0px;
+	display: inline-block;
+}
+
+.mail {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: url(img/img/img-sprite1.png) -300px 0px;
+	display: inline-block;
+}
+
+.c a p:hover {
+	color: orange;
+}
+
+.c {
+	margin-bottom: 30px;
+}
+
+.footer {
+	height: 270px;
+	background: #eee;
+}
+
+.foot {
+	width: 1140px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.icon {
+	margin: 50px auto 20px;
+	/*background-color: lightseagreen;*/
+}
+
+.icon1 {
+	background: url(img/img/img-sprite1.png) -3px -3px;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	margin: 0 15px;
+	/*background-color: lightblue;*/
+}
+
+.icon2 {
+	background: url(img/img/img-sprite1.png) -58px -3px;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	margin: 0 15px;
+	/*background-color: lightcoral;*/
+}
+
+.icon3 {
+	background: url(img/img/img-sprite1.png) -113px -3px;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0 15px;
+	/*background-color: lightgreen;*/
+}
+
+.icon4 {
+	background: url(img/img/img-sprite1.png) -168px -3px;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0 15px;
+	/*background-color: lightgray;*/
+}
+
+.icon a i:hover {
+	color: red;
+}
+
+.menuer {
+	width: 560px;
+	height: 54px;
+	margin: 0 auto;
+}
+
+.menuer a {
+	text-decoration: none;
+	color: #000;
+	margin: 10px 20px;
+}
+
+.menuer li a:first-of-type {
+	float: left;
+}
+
+.last {
+	margin-top: 20px;
+}
+
+.last p {
+	clear: left;
+}
+
+.last a {
+	color: green;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.last a:hover {
+	color: #666666;
+	text-decoration: underline;
+}
