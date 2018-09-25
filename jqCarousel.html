@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <div id="box">
+        <ul>
+            <li><img src="img/1.jpg" alt="" width="300px" height="300px"></li>
+            <li><img src="img/2.jpg" alt="" width="300px" height="300px"></li>
+            <li><img src="img/3.jpg" alt="" width="300px" height="300px"></li>
+            <li><img src="img/4.jpg" alt="" width="300px" height="300px"></li>
+        </ul>
+    </div>
+    <div id="btn">
+        <input type="button" class="left" value="left"/>
+        <input type="button" class="right" value="right"/>
+    </div>
+    <div id="item">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style-type: none
+            }
+        #box{
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        #box ul{
+            width: 1200px;
+            overflow: hidden;
+        }
+        #box ul>li{
+            float: left;
+            width: 300px;
+            height: 300px;
+        }
+        #btn{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 100px;
+        }
+        #btn input:last-of-type{
+            float: right;
+        }
+        #item{
+            width: 100px;
+            margin: 0 auto;
+            position: relative;
+            bottom: 20px;
+        }
+        #item li{
+            list-style: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            float: left;
+            margin-left: 10px;
+            background: whitesmoke;
+        }
+        #item li.active{
+            background: #999;
+        }
+    </style>
+
+    <script>
+        //鼠标点击right显示下一张图片
+            $('.right').click(function () {
+                var rightIndex = old.index($('#box li:eq(0)')) + 1;
+                if (rightIndex >= old.length) {
+                    rightIndex = 0;
+                }
+                $('#item li').eq(rightIndex).addClass('active').siblings().removeClass('active');
+                old.eq(rightIndex).insertAfter('#box li:eq(0)');
+
+                $("#box ul").animate({marginLeft:"-300px"},600, function () {
+                    $("#box ul>li").eq(0).appendTo($("#box ul"));
+                    $("#box ul").css('marginLeft','0px');
+                });
+            })
+            //上一张
+            $('.left').click(function () {
+                var leftIndex = old.index($('#box li:eq(0)'));
+                if (leftIndex < 0) {
+                    leftIndex = old.length - 1;
+                }
+                $('#item li').eq(leftIndex).addClass('active').siblings().removeClass('active');
+                old.eq(leftIndex).insertBefore('#box li:eq(0)');
+                
+                $("#box ul").animate({marginLeft:"0px"},600 , function(){
+                    $("#box ul").css('marginLeft','-300px');
+                    $("#box ul>li").eq(3).prependTo($("#box ul"));
+                });
+            })
+            
+            var old = $('#box li');
+        //点击li切换图片
+        $('#item li').click(function(){
+            $(this).addClass('active').siblings().removeClass('active')
+            if($(this).index() > old.index($('#box li:eq(0)'))){
+                old.eq($(this).index()).insertAfter('#box li:eq(0)');
+                $('#box ul').animate({
+                    'margin-left':'-300px'
+                }, 600, function(){
+                    $('#box ul').css('margin-left','0px').find('li').eq(0).appendTo('#box ul');
+                })
+            }
+            else if($(this).index < old.index($('#box li:eq(0)'))){
+                old.eq($(this).index()).insertBefore('#box li:eq(0)');
+                $('#box ul').animate({
+                    'margin-left':'0px'
+                }, 600, function(){
+                    $('#box ul').css('margin-left','-300px');
+                })
+                
+            }    
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stick</title>
+</head>
+<body>
+       </body>
+    <br>1<br><br><br><br>1<br> <br>1<br><br><br><br>1<br> <br>1<br><br><br><br>1<br> <br>1<br><br><br><br>1<br>
+    <br>1<br><br><br><br>1<br> <br>1<br><br><br><br>1<br> <br>1<br><br><br><br>1<br> <br>1<br><br><br><br>1<br>
+    <div class="box">
+        <h3>111111111111</h3>
+        <h3>222222222222</h3>
+        <h3>333333333333</h3>
+        <h3>444444444444</h3>
+    </div>
+
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background: lightblue;
+            transform: scale(0);
+            transition: all .5s;
+        }
+        .box h3{
+            transform: translateX(-150px);
+        }
+        .box h3:nth-of-type(1){
+            transition: all .5s .1s;
+        }
+        .box h3:nth-of-type(2){
+            transition: all .5s .2s;
+        }
+        .box h3:nth-of-type(3){
+            transition: all .5s .3s;
+        }
+        .box h3:nth-of-type(4){
+            transition: all .5s .4s;
+        }
+        .box.active{
+            transform: scale(1);
+        }
+        .box.active h3{
+            transform: translateX(0);
+        }
+    </style>
+
+    <script type="text/javascript">
+        var addClass = function(element, className) {
+				var oldClass = element.className;
+				var classArray = oldClass.split(' ');
+				classArray.push(className);
+				element.className = classArray.join(' ').trim();
+			};
+			
+			var box = document.querySelector('div.box');
+			var boxY = box.offsetTop;
+
+        document.body.onscroll = function() {
+				if(window.pageYOffset > boxY - window.innerHeight + box.clientHeight) {
+					addClass(box,'active')
+				} else {
+					
+				}
+			}
+    </script>
+</body>
+</html>

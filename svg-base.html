@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<svg width="100%" height="500">
+			<circle cx="100" cy="50" r="50"
+				style="fill: orange; stroke:lightseagreen; stroke-width: 2;">
+			</circle>
+			<rect width="100" height="50" x="50" y="200" rx="" ry="20"
+				style="fill: limegreen; stroke: lightcoral; stroke-width: 5; fill-opacity: .5;">
+			</rect>
+			<ellipse cx="300" cy="50" rx="100" ry="50"
+				style="fill: rgba(255,0,155,.5);">
+			</ellipse>
+			<line x1="450" y1="0" x2="550" y2="100"
+				style="stroke-width: 2; stroke: red;">
+			</line>
+			<line x1="550" y1="0" x2="450" y2="100"
+				style="stroke-width: 2; stroke: red;">
+			</line>
+			<polygon points="250,200 300,250 300,200"
+				style="stroke: lightskyblue; stroke-width: 3; fill: none;">
+			</polygon>
+			<polygon points="500,150 530,260 450,190 550,190 470,260 "
+				style="fill: white; stroke: sandybrown; stroke-width: 2px;">
+			</polygon>
+			<path d="M 50 350 q 75 300 150 0"
+				style="stroke-width: 2; stroke: palevioletred; fill: none;">
+			</path>
+			<text x="250" y="350" fill="red" transform="rotate(15 250,350)">
+				Saphenous Vein Graft
+			</text>
+			<defs>
+				<path id="path1" d="M250,250 a1,1 0 1,0 180,200" />
+			</defs>
+			<text x="250" y="0" style="fill:red">
+			<textpath xlink:href="#path1">
+				Saphenous Vein Graft</textpath>
+			</text>
+		</svg>
+		
+	</body>
+</html>

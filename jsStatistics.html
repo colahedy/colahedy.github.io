@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script type="text/javascript">
+            //    判断一个字符串中出现次数最多的字符，统计这个次数
+                var str='goodboy';
+                var maxObj=Mmax(str);
+                console.log(maxObj);
+                function Mmax(str) {
+                    var obj={}; //去重之后的对象，{char:'g',num:1}
+                    var max={char:'',num:0};   //最大次数的字符
+                    for(var i=0;i<str.length;i++){  
+                        if(obj[str[i]]){
+                            ++obj[str[i]];
+                        }else{
+                            obj[str[i]]=1;
+                        }
+                        if(obj[str[i]]>max.num){
+                            max.num=obj[str[i]];
+                            max.char=str[i];
+                        }
+                    }
+                    return {
+                        str:str,
+                        obj:obj,
+                        max:max
+                    }
+                }
+            </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div class="bx">
+			<a href="">
+				<div class="img">
+					<img src="img/4.jpg" />
+				</div>
+				<div class="fobt">
+					<h3>Heading here</h3><hr/>
+					<p>Description goes here</p>
+				</div>
+			</a>
+		</div>
+		<style type="text/css">
+			h3, p{
+				margin: 0;
+				padding: 0;
+			}
+			.bx a{
+				text-decoration: none;
+			}
+			.bx {
+				width: 200px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.bx a .img{
+				width: 200px;
+			    height: 200px;
+			    margin: 0 auto;
+			    position: relative;
+			    
+			  	opacity: 1;
+			  	transition: all .4s ease-in-out;
+			}
+			.bx a .img img {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+			}
+			.bx a .fobt{
+				width: 200px;
+				height: 200px;
+				background: grey;
+				text-align: center;
+				border-radius: 50%;
+				position: absolute;
+				top: 0;
+    			left: 0px;
+    			pointer-events: none;
+    			opacity: 0;
+    			visibility: hidden;
+			  	transition: all .4s ease;
+			}
+			.bx a .fobt h3{
+				color: #D3D3D3;
+			    font-size: 22px;
+			    padding-top: 50px;
+			    text-transform: uppercase;
+			    letter-spacing: 2px;
+			}
+			.bx a .img:before {
+				content: '';
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6);
+				opacity: 1;
+			  	transition: all .4s ease-in-out;
+			}
+			.bx a:hover .img{
+				opacity: 0;
+				pointer-events: none;
+			}
+			.bx a:hover .img:before{
+				opacity: 0;
+				pointer-events: none;
+			}
+			.bx a .img{
+				transform: translateX(0);
+			}
+			.bx a:hover .img{
+				transform: translateX(100%);
+			}
+			.bx a .fobt{
+				
+				transform: translateX(-100%);
+			}
+			.bx a:hover .fobt{
+				transform: translateX(0);
+				visibility: visible;
+				opacity: 1;
+			}
+		</style>
+		<script src="https://cdn.bootcss.com/prefixfree/1.0.7/prefixfree.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

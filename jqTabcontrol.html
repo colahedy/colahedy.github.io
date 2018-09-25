@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+        <ul  class="tabs">
+            <li class="first">选项I</li>
+            <li>选项II</li>
+            <li>选项III</li>
+        </ul>
+        <div class="one">1</div>
+        <div>2</div>
+        <div>3</div>
+        <style>
+            .tabs{
+                background: lightblue;
+                margin: 0 auto;
+                padding: 0;
+                list-style: none;
+                width: 150px;
+                overflow: hidden;
+            }
+            .tabs li{
+                float: left;
+                width: 50px;
+                line-height: 30px;
+                border: 1px solid lightcoral;
+                box-sizing: border-box;
+                text-align: center;
+                cursor: pointer;
+            }
+            div{
+                width: 150px;
+                height: 200px;
+                background: lightgreen;
+                margin: 0 auto;
+                border: 1px solid #cccccc;
+                box-sizing: border-box;
+                display: none;
+            }
+            div:first-of-type{
+                display: block;
+            }
+            .first{
+                background: lightseagreen;
+            }
+        </style>
+        <script>
+            $('ul li').click(function(){
+                $(this).addClass('first').siblings().removeClass('first');
+                $('div').hide().eq($(this).index()).show();
+            })
+    </script>
+
+        
+</body>
+</html>
+

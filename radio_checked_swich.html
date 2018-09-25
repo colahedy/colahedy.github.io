@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>职业</p>
+		<label class="swich">
+			<input type="radio" name="profession"/>
+			<div class="click">前端工程师</div>
+		</label>
+		<label class="swich">
+			<input type="radio" name="profession"/>
+			<div class="click">游戏开发师</div>
+		</label>
+		<label class="swich">
+			<input type="radio" name="profession"/>
+			<div class="click">视觉设计师</div>
+		</label>
+		
+		<hr/>
+		<p>技能</p>
+		<label class="swich">
+			<input type="checkbox"/>
+			<div class="click">HTML</div>
+		</label>
+		<label class="swich">
+			<input type="checkbox"/>
+			<div class="click">SVG</div>
+		</label>
+		<label class="swich">
+			<input type="checkbox"/>
+			<div class="click">JavaScrit</div>
+		</label>
+		<label class="swich">
+			<input type="checkbox"/>
+			<div class="click">CSS</div>
+		</label>
+		<hr/>
+		<style type="text/css">
+			body{
+				text-align: center;
+			}
+			.swich{
+				display: inline-block;
+			}
+			.swich input{
+				display: none;
+			}
+			.swich .click{
+				background: lightgrey;
+				line-height: 36px;
+				padding: 0 20px 0 10px;
+				font-size: 14px;
+			}
+			.swich .click:before{
+				content: '';
+				width: 16px;
+				height: 16px;
+				background: url(img/input-unchecked.png);
+				display: inline-block;
+				vertical-align: middle;
+				margin-bottom: 2px;
+				margin-right: 5px;
+			}
+			.swich input:checked +.click{
+				background: lightblue;
+			}
+			.swich input:checked +.click:before{
+				background: url(img/input-checked.png);
+			}
+			i.background{
+				width: 80px;
+				height: 30px;
+				background: lightgrey;
+				display: block;
+				border-radius: 40px;
+				transition: all .5s;
+			}
+			.bottom{
+				width: 25px;
+				height: 25px;
+				background: white;
+				display: block;
+				border-radius: 15px;
+				margin: 5px;
+				transition: all .5s;
+				position: relative;
+				top: 2px;
+				left: 0px;
+			}
+		</style>
+			<label class="on-off">
+				<input type="checkbox" name="" id="" value="" />
+				<i class="background"><i class="bottom"></i></i>
+			</label>
+			<style type="text/css">
+			.on-off{
+				cursor: pointer;
+			}
+			.on-off input{
+				display: none;
+			}
+			i.background{
+				width: 80px;
+				height: 30px;
+				background: lightgrey;
+				display: block;
+				border-radius: 40px;
+				transition: all .5s;
+				margin: 0 auto;
+			}
+			.bottom{
+				width: 25px;
+				height: 25px;
+				background: white;
+				display: block;
+				border-radius: 15px;
+				margin: 5px;
+				transition: all .5s;
+				position: relative;
+				top: 2px;
+				left: 0px;
+			}
+			input:checked+i.background{
+				background: cornflowerblue;
+			}
+			input:checked+i.background i.bottom{
+				left: 45px;
+			}
+			</style>
+			
+		
+	</body>
+</html>

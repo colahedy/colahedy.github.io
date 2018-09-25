@@ -1,0 +1,40 @@
+.slider {
+    width: 500px;
+//  height: 300px;
+    margin: 0 auto;
+    position: relative;
+    .slider-c {
+        img:first-child {
+            position: relative;
+            opacity: 1;
+        }
+        img {
+            max-width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity .6s ;
+        }
+    }
+    .slider-f-l {
+        #front,
+        #later{
+            display: inline-block;
+            position: absolute;
+            top: 45%;
+            border: none;
+            outline: none;
+            margin: auto;
+            height: 10px;
+            color: orange;
+            cursor: pointer;
+        }
+        #front{
+            left: 0;
+        }
+        #later{
+            right: 0;
+        }
+    }
+}

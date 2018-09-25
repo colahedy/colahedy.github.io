@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <div class="btn">
+        <span>ABCD</span>
+        <i></i>
+    </div>
+    <style>
+        .btn{
+            width: 150px;
+            height: 50px;
+            margin: 0 auto;
+            background: #F8B627;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 5px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .btn span{
+            color: white;
+            display: block;
+            animation: desplode 0.5s forwards;
+        }
+        .btn span+i{
+            width: 150px;
+            height: 80px;
+            border-radius: 50%;
+            background: lightseagreen;
+            opacity: .8;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(0);
+            transition: all .6s;
+        }
+        .btn span.active+i{
+            transform: scale(3);
+        }
+    </style>
+    <script>
+        $('.btn span').hover(function(ev){
+            $('.btn span+i').css({
+                top:(ev.clientY - $('.btn span').offset().top - 40),
+                left:(ev.clientX - $('.btn span').offset().left - 75)
+            })
+            $('.btn span').addClass('active');
+        },function(){
+            $('.btn span').removeClass('active');
+        })
+
+        $('.btn span').mouseleave(function(){
+            $('.btn span+i').css({
+                top:(ev.clientY - $('.btn span').offset().top - 40),
+                left:(ev.clientX - $('.btn span').offset().left - 75)
+            })
+            $('.btn span').addClass('active');
+        },function(){
+            $('.btn span').removeClass('active');
+        })
+    </script>
+</body>
+</html>

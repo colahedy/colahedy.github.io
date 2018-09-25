@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+    <div class="first">
+        <img src="img/lol1.png" />
+        <div class="glass"></div>
+        <div class="move"></div>
+    </div>
+    <div class="magnify">
+        <img src="img/lol1.png" />
+    </div>
+    <style>
+        .first{
+            width: 200px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .first img{
+            width: 100%;
+        }
+        .first .glass{
+            width: 70px;
+            height: 70px;
+            background: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: .3;
+        }
+        .first .move{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .magnify{
+            width: 210px;
+            height: 210px;
+            margin: 0 auto;
+            position: relative;
+            left: 206px;
+            top: -250px;
+            border: 1px solid white;
+            overflow: hidden;
+        }
+        .magnify img{
+            width: 600px;
+            height: 900px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script>
+        var magnifying = $('.magnify img').width() / $('.first img').width();
+        $('.first .move').mousemove(function(ev){
+            var x = ev.offsetX;
+            var y = ev.offsetY;
+            if(ev.offsetX <= 35){
+                x = 35;
+            }
+            if(ev.offsetX >= 165){
+                x = 165;
+            }
+            if(ev.offsetY <= 35){
+                y = 35;
+            }
+            if(ev.offsetY >= 265){
+                y = 265;
+            }
+
+            $('.first .glass').css({
+                top: y - 35,
+                left: x - 35
+            })
+
+            $('.magnify img').css({
+                top: (y - 35) * -magnifying,
+                left: (x - 35) * -magnifying
+            })
+        })
+    </script>
+</body>
+</html>

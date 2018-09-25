@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			/*var firstF = {
+				name:'xiao',
+				age:'19',
+				height:160
+							
+				}
+			var lastF = {
+				name:'xiao',
+				age:'20',
+				height:161
+			}
+						
+			var F=function(name,age,height){
+				this.name=name;
+				this.age=age;
+				this.height=height;
+				this.greeting=function(){
+					console.log('hello'+''+this.name);
+				}	
+			}*/
+
+			var x = {
+				count: 0,
+				add: function() {
+					return this.count += 1;
+				}
+			}
+			var y = {
+				count: 50,
+				add: function() {
+					return this.count += 1;
+				}
+			}
+			var add = function() {
+				this.count += 1;
+			}
+		</script>
+	</body>
+
+</html>

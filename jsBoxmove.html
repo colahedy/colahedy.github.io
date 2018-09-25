@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div class="box"></div>
+		<style type="text/css">
+			html{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				margin: 0;
+				width: 800px;
+				height: 800px;
+				position: relative;
+				overflow: hidden;
+			}
+			.box {
+				background: url(img/m1.png);
+				width: 100px;
+				height: 120px;
+				position: absolute;
+			}
+		</style>
+
+		<script type="text/javascript">
+			var box = document.querySelector('.box');
+
+			document.body.onkeydown = function(event) {
+				console.log(event.keyCode);
+				if(event.keyCode === 37) {
+					boxMove2();
+				}
+				if(event.keyCode === 38) {
+					boxMove4();
+				}
+				if(event.keyCode === 39) {
+					 boxMove1();
+				} 
+				if(event.keyCode === 40) {
+					boxMove3();
+				}
+				
+			}
+			
+//			var boxMove1 = function() {
+//				box.style.left = box.offsetLeft +10 + 'px';
+//			}
+
+			var left = 0;
+			var boxMove1 = function() {
+				left += 5;
+				box.style.left =left + 'px';
+			}
+
+			var left = 0;
+			var boxMove2 = function() {
+				left -= 5;
+				box.style.left = left + 'px';
+			}
+
+			var boxMove3 = function() {
+				box.style.top = box.offsetTop +5 + 'px';
+			}
+			
+			var boxMove4 = function() {
+				box.style.top = box.offsetTop -5 + 'px';
+			}
+
+			setInterval(function() {
+//				boxMove1();
+			}, 5);
+			
+		</script>
+	</body>
+
+</html>

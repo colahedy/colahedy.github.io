@@ -1,0 +1,35 @@
+.slider {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.slider .slider-c img:first-child {
+  position: relative;
+  opacity: 1;
+}
+.slider .slider-c img {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+.slider .slider-f-l #front,
+.slider .slider-f-l #later {
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+  border: none;
+  outline: none;
+  margin: auto;
+  height: 10px;
+  color: orange;
+  cursor: pointer;
+}
+.slider .slider-f-l #front {
+  left: 0;
+}
+.slider .slider-f-l #later {
+  right: 0;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#main {
+				width: 500px;
+				height: 300px;
+				border: 1px solid red;
+				display: flex;
+			}
+			
+			#main div:nth-of-type(1) {
+				flex-grow: 1;
+			}
+			
+			#main div:nth-of-type(2) {
+				flex-grow: 3;
+			}
+			
+			#main div:nth-of-type(3) {
+				flex-grow: 1;
+			}
+			
+			#main div:nth-of-type(4) {
+				flex-grow: 1;
+			}
+			
+			#main div:nth-of-type(5) {
+				flex-grow: 1;
+			}
+			#main div:nth-of-type(6) {
+				flex-grow: 2;
+			}
+		</style>
+
+		<body>
+			<div id="main">
+				<div style="background-color:coral;"></div>
+				<div style="background-color:lightblue;"></div>
+				<div style="background-color:khaki;"></div>
+				<div style="background-color:pink;"></div>
+				<div style="background-color:ligtgrey;"></div>
+				<div style="background-color: #BC8F8F;"></div>
+			</div><br />h
+			
+			<style>
+				p{
+					/*float: left;*/
+				}
+				a{
+					float: left;
+				}
+			</style>
+			<a href="http://www.taobao.com"><img src="img/QQ图片20180719200639.png" width="100" height="100" /></a>
+			<p>
+				<label for="zh">账号：</label>
+				<input type="text"id="zh">
+			</p>
+			<p >
+				<label for="mima">密码：</label>
+				<input type="text"id="mima">
+				
+			</p>
+			<label for="attachment">上传附件：</label>
+		    <input type="file" id="attachment"/>
+		    
+     <select id="choseone">
+         <option>-请选择-</option>
+         <option value="1">html5</option>
+         <option value="2">js</option>
+         <option value="3">css</option>
+     </select>
+		</body>
+
+</html>
