@@ -32,6 +32,7 @@
 #### 放大镜  https://colahedy.github.io/jqMagnify.html
 #### 轮播图  https://colahedy.github.io/jqCarousel.html
 #### 背景跟随  https://colahedy.github.io/JqBtn.html
+#### 二级联动 https://colahedy.github.io/jq-city/citys.html
 
 ### Ajax
 #### 瀑布流  https://colahedy.github.io/jqAjaxPubu.html
