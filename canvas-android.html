@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="400" height="400" style="border:sandybrown 1px solid"></canvas>
+    <script>
+        var d = document.querySelector('canvas');
+        var ctx = d.getContext('2d');
+        
+        ctx.fillStyle = 'lightgreen';
+        ctx.strokeStyle = 'lightgreen';
+        //身体
+        ctx.fillRect(120,150,150,140);
+
+        ctx.fillRect(130,290,130,10);
+
+        ctx.beginPath();
+        ctx.arc(130,290,10,0,Math.PI);
+        ctx.arc(260,290,10,0,Math.PI);
+        ctx.fill();
+        //头
+        ctx.beginPath();
+        ctx.arc(195,140,75,Math.PI,0);
+        ctx.fill();
+        //左手
+        ctx.fillRect(80,170,30,80);
+
+        ctx.beginPath();
+        ctx.arc(95,170,15,Math.PI,0);
+        ctx.arc(95,250,15,0,Math.PI);
+        ctx.fill();
+        //右手
+        ctx.fillRect(280,170,30,80);
+
+        ctx.beginPath();
+        ctx.arc(295,170,15,Math.PI,0);
+        ctx.arc(295,250,15,0,Math.PI);
+        ctx.fill();
+        //左腿
+        ctx.fillRect(150,280,30,60);
+
+        ctx.beginPath();
+        ctx.arc(165,340,15,0,Math.PI);
+        ctx.fill();
+        //右腿
+        ctx.fillRect(210,280,30,60);
+
+        ctx.beginPath();
+        ctx.arc(225,340,15,0,Math.PI);
+        ctx.fill();
+        //眼睛
+        ctx.beginPath();
+        ctx.fillStyle = 'white';
+        ctx.arc(155,110,12,0,2*Math.PI);
+        ctx.arc(235,110,12,0,2*Math.PI);
+        ctx.fill();
+        //左天线
+        ctx.beginPath();
+        ctx.lineWidth = 5;
+        ctx.moveTo(140,50);
+        ctx.lineTo(180,100);
+        ctx.stroke();
+        //右天线
+        ctx.beginPath();
+        ctx.lineWidth = 5;
+        ctx.moveTo(250,50);
+        ctx.lineTo(210,100);
+        ctx.stroke();
+        
+    </script>
+</body>
+</html>

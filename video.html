@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="full" type="button" value="全屏播放">
+    <br>
+    <video width="270" height="200" controls>
+        <source src="http://www.runoob.com/try/demo_source/movie.mp4" type="video/mp4">
+        <source src="http://www.runoob.com/try/demo_source/movie.ogg" type="video/ogg">
+        
+        <track default label="caption" kind="subtitles" srclang="zh" src="carousel/text.vtt">
+    </video>
+    <script>
+        var full = document.querySelector('#full');
+        var video = document.querySelector('video');
+
+        full.onclick = function(){
+            video.webkitRequestFullscreen();
+        }
+    </script>
+</body>
+</html>
