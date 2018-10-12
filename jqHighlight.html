@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>员工信息</title>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+    <h2>员工信息</h4>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>姓名</th>
+          <th>薪水</th>
+          <th>年龄</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" name="c1" checked/></td>
+          <td>张三</td>
+          <td>2000</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="c1"/></td>
+          <td>李四</td>
+          <td>3000</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="c1"/></td>
+          <td>王五</td>
+          <td>2400</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="c1"/></td>
+          <td>马六</td>
+          <td>4000</td>
+          <td>21</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<style type="text/css">
+  div{
+    width:70%;
+    padding:10px;
+    margin:10px auto;
+    border:1px solid #CCC;
+  }
+  h2{
+    text-align:center;
+  }
+  table{
+    width:100%;
+    border:2px solid #999;
+    text-align:center;
+    border-collapse:collapse;
+  }
+  table td,table th{
+    border:2px solid #999;
+    height:25px;
+  }
+  .sel{
+    background-color:#FFFF00;
+  }
+</style>
+<script type="text/javascript">
+  //页面加载完毕后执行,包括后绑定的单击事件
+  $(function(){
+	//设置三种背景颜色
+	$("thead tr").addClass("background");
+	$("tbody tr:even").addClass("even");
+	$("tbody tr:odd").addClass("odd");
+	//为已有的checked添加背景
+	$("tbody input:checkbox:checked").parent().parent().addClass("sel");
+	//绑定单击事件
+	$("tbody tr").click(function(e){
+	  //判断单击的改行是否具有sel样式--$(this)表示点击的这一行
+	  var flag = $(this).hasClass("sel");
+	  if(flag){
+	  //若已经有样式,点击时删除该样式,取消checkbox的勾(checked属性)
+	    $(this).removeClass("sel");
+		$(this).find("input:checkbox").prop("checked",false); 
+	  }else{
+	  //若没有样式,点击时添加该样式,添加checkbox的勾(checked属性) 
+	  $(this).addClass("sel");
+	  $(this).find("input:checkbox").prop("checked",true);
+	  }
+	});
+  });
+</script>
+</body>
+</html>
