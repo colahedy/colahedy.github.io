@@ -17,7 +17,7 @@
 #### 种地  [https://colahedy.github.io/zhongdi/zhongdi/dex.html](https://colahedy.github.io/zhongdi/zhongdi/dex.html)
 
 
-### <font color="sandybrown">JavaScript+CSS</font>
+### <font color="sandybrown">JavaScript</font>
 #### 选项卡 [https://colahedy.github.io/jsTable.html](https://colahedy.github.io/jsTable.html)
 #### 轮播图  [https://colahedy.github.io/carousel/onclick.html](https://colahedy.github.io/carousel/onclick.html)
 #### 点击增加  [https://colahedy.github.io/jsCount.html](https://colahedy.github.io/jsCount.html)
@@ -27,12 +27,12 @@
 #### 微信飞机大战  [https://colahedy.github.io/plane/plane.html](https://colahedy.github.io/plane/plane.html)
 #### 抽奖  [https://colahedy.github.io/lottery/lottery.html](https://colahedy.github.io/lottery/lottery.html)
 
-### <font color="sandybrown">JQueny+CSS</font>
+### <font color="sandybrown">JQueny</font>
 #### 选项卡  [https://colahedy.github.io/jqTabcontrol.html](https://colahedy.github.io/jqTabcontrol.html)
 #### 放大镜  [https://colahedy.github.io/jqMagnify.html](https://colahedy.github.io/jqMagnify.html)
 #### 轮播图  [https://colahedy.github.io/jqCarousel.html](https://colahedy.github.io/jqCarousel.html)
 #### 背景跟随  [https://colahedy.github.io/JqBtn.html](https://colahedy.github.io/JqBtn.html)
 #### 二级联动  [https://colahedy.github.io/jq-city/citys.html](https://colahedy.github.io/jq-city/citys.html)
 
-### <font color="sandybrown">Ajax+CSS</font>
+### <font color="sandybrown">Ajax</font>
 #### 瀑布流  [https://colahedy.github.io/jqAjaxPubu.html](https://colahedy.github.io/jqAjaxPubu.html)
