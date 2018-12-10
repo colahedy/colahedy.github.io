@@ -14,7 +14,7 @@
 #### 3D景深   [https://colahedy.github.io/my/3dmove/3dmove.html](https://colahedy.github.io/my/3dmove/3dmove.html)
 #### 图片-svg-字体   [https://colahedy.github.io/my/png-svg-fontface.html](https://colahedy.github.io/my/png-svg-fontface.html)
 #### 炉石  [https://colahedy.github.io/lushi/lushi.html](https://colahedy.github.io/lushi/lushi.html)
-#### 种地  [https://colahedy.github.io/zhongdi/zhongdi/dex.html](https://colahedy.github.io/zhongdi/zhongdi/dex.html)
+#### 农业  [https://colahedy.github.io/zhongdi/zhongdi/dex.html](https://colahedy.github.io/zhongdi/zhongdi/dex.html)
 
 
 ### <font color="sandybrown">JavaScript</font>
@@ -36,3 +36,4 @@
 
 ### <font color="sandybrown">Ajax</font>
 #### 瀑布流  [https://colahedy.github.io/jqAjaxPubu.html](https://colahedy.github.io/jqAjaxPubu.html)
+
