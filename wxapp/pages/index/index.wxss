@@ -1,0 +1,15 @@
+.carousel{
+  text-align: center;
+}
+.carousel swiper swiper-item{
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+.carousel swiper swiper-item:first-child{
+    background: lightcoral;
+}
+.carousel swiper swiper-item:last-child{
+  background: lightgreen;
+}

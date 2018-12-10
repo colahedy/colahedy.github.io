@@ -1,0 +1,13 @@
+.list-group-item.row{
+    margin: 0;
+}
+.panel-footer span::after{
+    content: '/';
+    margin: 0 5px 0 10px;
+}
+.panel-footer span:last-of-type::after{
+    content: ' ';
+}
+.finished h5 {
+    text-decoration: line-through;
+}

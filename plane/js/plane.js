@@ -45,7 +45,7 @@ var planeL = {
     width:66,
     height:80,
     imgSrc: 'images/our-plane.gif',
-    hitSrc: 'image/our-plane.gif',
+    hitSrc: 'images/our-plane.gif',
     boomSrc: 'images/our-plane-boom.gif',
     boomTime:100,
     hp:1

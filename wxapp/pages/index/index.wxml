@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class='carousel'>
+hello {{username}}
+<swiper indicator-dots='false'>
+  <swiper-item>a</swiper-item>
+  <swiper-item>b</swiper-item>
+</swiper>
+</view>
+-----------------------------------------
+<view class='carousel'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay='true' interval='1000'>
+  <block wx:for="{{imgSrc}}">
+    <swiper-item>
+      <image src="{{item}}"></image>
+    </swiper-item>
+    </block>
+  </swiper>
+  <button bindtap="changeIndicatorDots"></button>
+</view>

@@ -71,6 +71,7 @@ nav.top input {
 	border: 1px solid white;
 	color: white;
 	outline: none;
+	line-height: normal;
 }
 
 nav.top input[type=submit] {
